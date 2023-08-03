@@ -14,3 +14,8 @@ jobs:
       - run: echo '${{ github.ref }}'
       - run: echo '${{ github.base_ref }}'
       - run: echo '${{ github.head_ref }}'
+
+  required:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 10
